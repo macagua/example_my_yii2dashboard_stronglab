@@ -45,6 +45,12 @@ $config = [
             ],
         ],
     ],
+    'modules' => [
+        // Person Module
+        'person' => [
+            'class' => 'app\modules\person\Module',
+        ],
+    ],
     'params' => $params,
 ];
 
