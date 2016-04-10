@@ -1,0 +1,29 @@
+{
+    "name": "Person Module",
+    "title": "Person",
+    "routes": [
+        {
+            "route": "default/index",
+            "title": "List",
+            "icon": "list"
+        },
+        {
+            "route": "person/create",
+            "title": "Add",
+            "icon": "pencil"
+        },
+        {
+            "route": "person/view",
+            "title": false
+        },
+        {
+            "route": "person/update",
+            "title": false
+        },
+        {
+            "route": "person/delete",
+            "title": false,
+            "icon": "trash"
+        }
+    ]
+}

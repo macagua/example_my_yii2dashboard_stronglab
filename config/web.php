@@ -50,6 +50,21 @@ $config = [
         'person' => [
             'class' => 'app\modules\person\Module',
         ],
+        'dashboard' => [
+            'class' => 'stronglab\dashboard\Module',
+            // optional parameter, the default access for all guests
+            'roles' => ['@'],
+            // optional parameter, the number of columns in the panel (possible values: 1-3)
+            'column' => 2,
+            // a list of modules that will search for the dashboard.json file
+            'modules' => [
+                'person',
+                //'moduleID' => [
+                    // a separate path to the settings panel, registers the application directory
+                    // 'jsonPath' => 'config/dashboard/myconf.json',
+                //],
+            ],
+        ],
     ],
     'params' => $params,
 ];
